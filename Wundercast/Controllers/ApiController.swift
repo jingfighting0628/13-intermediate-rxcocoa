@@ -107,15 +107,16 @@ class ApiController {
 
   /// The api key to communicate with openweathermap.org
   /// Create you own on https://home.openweathermap.org/users/sign_up
-  private let apiKey = "<#Your Key#>"
+  private let apiKey = "12b2817fbec86915a6e9b4dbbd3d9036"
 
   /// API base URL
   let baseURL = URL(string: "http://api.openweathermap.org/data/2.5")!
 
+    
   init() {
-    Logging.URLRequests = { request in
-      return true
-    }
+    //Logging.URLRequests = { request in
+      //return true
+    //}
   }
 
   // MARK: - Api Calls
